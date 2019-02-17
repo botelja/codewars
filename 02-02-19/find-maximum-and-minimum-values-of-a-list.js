@@ -42,26 +42,22 @@ const max = function(list){
     return list[0];
 }
 
-const minimum = function(list){
+// const min = function(list){
     
-    let m = list.map(number => number < list[0] ? list[0] = number : list[0]);
+//     let m = list.map(number => number < list[0] ? list[0] = number : list[0]);
 
-    return list[0];
-}
+//     return m[0];
+// }
 
-const maximum = function(list){
+// const max = function(list){
     
-    let m = list.map(number => number > list[0] ? list[0] = number : list[0]);
+//     let m = list.map(number => number > list[0] ? list[0] = number : list[0]);
 
-    return list[0];
-}
+//     return m[0];
+// }
 
 
 console.log(min([-52, 56, 30, 29, -54, 0, -110]), -110);
 console.log(min([42, 54, 65, 87, 0]), 0);
 console.log(max([4,6,2,1,9,63,-134,566]), 566);
 console.log(max([5]), 5);
-console.log(minimum([-52, 56, 30, 29, -54, 0, -110]), -110);
-console.log(minimum([42, 54, 65, 87, 0]), 0);
-console.log(maximum([4,6,2,1,9,63,-134,566]), 566);
-console.log(maximum([5]), 5);
