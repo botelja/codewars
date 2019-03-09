@@ -13,4 +13,10 @@ function squareDigits(num){
     return Number(squareDigits.join(''))
 }
 
+function squareDigits(num){
+    numArr = String(num).split('');
+    let squareDigits = numArr.map((num) => num * num);
+    return Number(squareDigits.join(''))
+}
+
 console.log(squareDigits(9119), 811181);
