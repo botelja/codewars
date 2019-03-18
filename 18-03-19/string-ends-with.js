@@ -1,0 +1,31 @@
+// Complete the solution so that it returns true if the first argument(string) passed in ends with the 2nd argument (also a string).
+
+// Examples:
+
+// solution('abc', 'bc') // returns true
+// solution('abc', 'd') // returns false
+
+function solution(str, ending) {
+    
+    const solution = str.slice(-ending.length);
+    
+    if(solution === ending) {
+        return true;
+    }
+    
+    return false;    
+}
+
+function solution(str, ending) {
+    
+    const solution = str.slice(-ending.length);
+    
+    return solution === ending ? true : false;    
+}
+
+function solution(str, ending) {
+    return str.endsWith(ending); 
+}
+
+console.log(solution('samurai', 'ai'), true)
+console.log(solution('abcde', 'abc'), false)
