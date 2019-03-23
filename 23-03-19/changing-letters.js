@@ -43,4 +43,8 @@ function swap(st) {
     return capitalizeVowels.join('');
 }
 
+function swap(st) {
+    return st.replace(/[aeiou]/g, string => string.toUpperCase());
+}
+
 console.log(swap("HelloWorld!"),"HEllOWOrld!")
