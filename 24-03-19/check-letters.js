@@ -25,7 +25,11 @@ function letterCheck(arr) {
     return checkLetters;
 }
 
-
+function letterCheck(arr) {
+    const regex = new RegExp(`[^${arr[1]}]`, 'g');
+    console.log(regex);
+    return regex.test(arr[0]);
+}
 
 console.log(letterCheck(["trances", "nectar"]), true);
 console.log( letterCheck(["parses", "parsecs"]), false);
