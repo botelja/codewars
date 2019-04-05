@@ -13,28 +13,7 @@
 
 function shiftLeft(s, t){
 
-    let count = 0;
-
     
-        sArr = s.split('');
-        tArr = t.split('');
-        
-        for(let i = 0; i < sArr.length; i++) {
-            sArr.splice(0,1);
-            
-           
-            if(sArr.join('') === tArr.join('') || sArr.length === 0) {
-                count++;
-                break;
-            } else {
-                tArr.splice(0,1);
-                count++;
-            }
-            
-        }
-    
-
-    return count;
 }
 
 //console.log(shiftLeft("test", "west"), 2);
