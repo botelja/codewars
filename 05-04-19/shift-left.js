@@ -12,10 +12,27 @@
 // Both strings consist only of lowercase Latin letters.
 
 function shiftLeft(s, t){
+    let count = 0;
+    
+    while(s != t) {
+        if(s.length > t.length) {
+            count++;
+            s = s.substring(1);
+            console.log(s);
+        } else if (t.length > s.length) {
+            count++;
+            t = t.substring(1);
+        } else {
+            count = count +2;
+            s = s.substring(1);
+            t = t.substring(1);
+        }
+    }
 
+    return count;
     
 }
 
-//console.log(shiftLeft("test", "west"), 2);
+console.log(shiftLeft("test", "west"), 2);
 console.log(shiftLeft("test", "yes"), 7);
-//console.log(shiftLeft("b", "ab"), 1);
+console.log(shiftLeft("b", "ab"), 1);
