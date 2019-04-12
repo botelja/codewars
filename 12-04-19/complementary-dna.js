@@ -29,6 +29,25 @@ function DNAStrand(dna){
     return dnaArr.join('');
 }
 
+function DNAStrand(dna){
+    let dnaArr = dna.split('');
+
+    return dnaArr.map(char => {
+        if(char === 'A') {
+            return char = 'T';
+        } else if(char === 'T') {
+            return char = 'A';
+        }
+        if(char === 'C') {
+            return char = 'G';
+        } else if(char === 'G') {
+            return char = 'C';
+        }
+    
+    }).join('');
+
+}
+
 console.log(DNAStrand("AAAA"),"TTTT","String AAAA is");
-//console.log(DNAStrand("ATTGC"),"TAACG","String ATTGC is");
+console.log(DNAStrand("ATTGC"),"TAACG","String ATTGC is");
 //console.log(DNAStrand("GTAT"),"CATA","String GTAT is");
