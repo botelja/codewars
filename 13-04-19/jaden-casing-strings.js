@@ -20,5 +20,15 @@ String.prototype.toJadenCase = function () {
     return jadenCaseString.join(' ');
 };
 
+String.prototype.toJadenCase = function () {
+    let jadenCaseString = this.split(' ').map(word => {
+        let firstLetterUpper = word.split('');
+        firstLetterUpper[0] = firstLetterUpper[0].toUpperCase();
+        return firstLetterUpper.join('');
+    });
+
+    return jadenCaseString.join(' ');
+};
+
 var str = "How can mirrors be real if our eyes aren't real";
 console.log(str.toJadenCase(), "How Can Mirrors Be Real If Our Eyes Aren't Real");
