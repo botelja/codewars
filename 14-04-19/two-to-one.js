@@ -15,7 +15,19 @@ function longest(s1, s2) {
     const first = s1.split('');
     const second = s2.split('');
 
-    console.log(first);
+    for(let i = 0; i < first.length; i++) {
+        if(!longest.includes(first[i])) {
+            longest.push(first[i]);
+        }
+    }
+
+    for(let i = 0; i < second.length; i++) {
+        if(!longest.includes(second[i])) {
+            longest.push(second[i]);
+        }
+    }
+
+    return longest.sort().join('');
 
 }
 
